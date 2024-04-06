@@ -38,27 +38,27 @@ function LandingPage() {
         <img className="object-scale-down rounded-lg" src="https://images.ctfassets.net/lzny33ho1g45/password-security-p-img/72f3ab78724796a0990219ee8ed495c7/file.png?w=1520&fm=jpg&q=30&fit=thumb&h=760" alt="" />
 
       </div>
-      <div className=" my-2.5 w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 text-yellow-400 bg-gray-700">
+      <div className=" my-2.5 w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 text-red-500 bg-gray-700">
         <h1 className="text-white text-center my-3"> Password Generator </h1>
-        <div className="flex shadow runded-lg overflow-hidden mb-4">
+        <div className="flex shadow runded-lg overflow-hidden mb-4 pd-2 space-around mx-2">
           <input
             type="text"
             value={password}
-            className="outline-none w-full rounded-lg "
+            className="outline-none w-full rounded-lg pr-4 px-2 text-center"
             placeholder="Password"
             readOnly
             ref={selectReference}
           />
-          <button onClick={copyPassswordhandler} className="outline-none rounded-lg bg-blue-700 text-white px-3 py-0.5 shrink-0">
+          <button onClick={copyPassswordhandler} className="outline-none rounded-lg bg-blue-700 text-white px-3 py-0.5 shrink-0 mx-4">
             copy
           </button>
         </div>
-        <div className="flex text-sm gap-x-2">
+        <div className="flex text-sm gap-x-2 justify-center">
           <div className="flex items-center gap-x-1">
             <input
               type="range"
               min={8}
-              max={40}
+              max={30}
               value={length}
               className="cursor-pointer"
               onChange={(e) => setLength(e.target.value)}
